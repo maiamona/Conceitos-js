@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>findIndex()</h2>
+
+<p>findIndex() returns the index of the first element that passes a test (provided by a function).</p>
+
+<p id="demo"></p>
+
+<script>
+const ages = [3, 10, 18, 20];
+
+document.getElementById("demo").innerHTML = ages.findIndex(checkAge);
+
+function checkAge(age) {
+  return age > 18;
+}
+</script>
+
+<p>findIndex() is not supported in Internet Explorer 11 (or earlier).</p>
+
+</body>
+</html>
